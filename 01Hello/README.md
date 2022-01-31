@@ -21,3 +21,8 @@ By installing Nodejs we can run JS scripts without browsers.
 
 - install nodejs
 - to run JS script `node index.js`
+
+### Which version of JS we should use
+
+ECMAScript - JS follows guidelines of it
+versions: ES6, ES10, etc
