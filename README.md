@@ -96,3 +96,74 @@ const oneDown = threeArr.pop();
 console.log(oneDown); //6
 console.log(threeArr); // [4,5]
 ```
+
+`.shift()`it removes the first element instead of the last.
+
+```js
+cosnt arr = [1,2,3];
+arr.shift(); // 1
+```
+
+`.unshift()` works like push() but instead adding value at end it adds at beggining.
+
+```js
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy"); // ["Happy","J","cat"]
+```
+
+## Functions
+
+reusable javascript functions
+
+```js
+function reusableFunction() {
+  console.log("Hi World🚀");
+}
+
+reusableFunction();
+```
+
+**Passing Values to Functions with Arguments**
+
+```js
+function functionWithArgs(num1, num2) {
+  // prints sum of two nums
+  console.log(num1 + num2);
+}
+
+functionWithArgs(1, 2);
+```
+
+**Return value from function**
+
+```js
+function timesFive(num) {
+  return num * 5;
+}
+timesFive(5); // returns 25
+```
+
+**Global scope**
+
+```js
+// variable with let, and const keywork are global.
+
+let myGlobal = 10;
+
+function fun1() {
+  // and variable without any let, const are automatically global.
+  oopsGlobal = 5;
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output); //myGlobal: 10 oopsGlobal: 5
+}
+```

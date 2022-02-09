@@ -26,3 +26,17 @@ const arr3 = [1, 2, 3];
 let poppedvalue = arr3.pop();
 console.log(poppedvalue);
 console.log(arr3);
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+console.log(ourArray);
+const removedFromOurArray = ourArray.shift();
+console.log(removedFromOurArray);
+
+const shoppingList = [
+  ["5star", 5],
+  ["Kitkat", 3],
+  ["Munch", 7],
+  ["chocolate", 1],
+  ["chips", 3],
+];
+console.log(shoppingList);
