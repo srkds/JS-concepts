@@ -167,3 +167,37 @@ function fun2() {
   console.log(output); //myGlobal: 10 oopsGlobal: 5
 }
 ```
+
+assignment of return value
+
+```js
+function sum(m, n) {
+  return m + n;
+}
+
+const mySum = sum(10, 2); // mySum = 12
+```
+
+**if**
+
+```
+if(condition is true){
+  execute code
+}
+```
+
+`==`:Equality operator. JS must convert two different datatypes to compare
+
+```js
+1 == 1; // true
+1 == 2; // false
+1 == "1"; // true
+"1" == 1; // true
+```
+
+`===`:Strict Equality operator. It does not perform typeconversion
+
+```js
+1 === 1; // true
+1 == "1"; // false
+```
